@@ -1,16 +1,12 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {}
-    }
+    { "src": "package.json", "use": "@vercel/static-build" }
   ],
   "routes": [
-    {
-      "src": "/guni/(.*)",
-      "dest": "/index.html"
-    }
+    { "src": "/", "status": 302, "headers": { "Location": "/guni" } },
+    { "src": "/guni/(.*)", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
+
