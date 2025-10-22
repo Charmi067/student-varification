@@ -5,7 +5,7 @@
   ],
   "routes": [
     { "src": "/", "status": 302, "headers": { "Location": "/guni" } },
-    { "src": "/guni/(.*)", "dest": "/index.html" },
+    { "src": "/Login/(.*)", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
