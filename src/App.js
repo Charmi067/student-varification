@@ -9,6 +9,7 @@ import FacultyList from "./components/facultyList";
 import UpdateFaculty from "./components/UpdateFaculty";
 import SignUp from './components/SignUp'
 import Login from './components/Login'
+
 const Myrouter=createBrowserRouter(
   [
     {path:'signUp',element:<SignUp/>},
